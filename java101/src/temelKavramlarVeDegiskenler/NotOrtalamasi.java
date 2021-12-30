@@ -30,6 +30,6 @@ public class NotOrtalamasi {
 
         String gecis = (ort >= 60) ? "Sınıfı Geçtiniz" : "Sınıfta Kaldınız";
         System.out.println(gecis);
-
+        // if else kullanmadan yapılmalı
     }
 }
