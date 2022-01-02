@@ -1,6 +1,6 @@
 package temelKavramlarVeDegiskenler;
 import  java.util.Scanner;
-public class kdvHesaplama {
+public class KdvHesaplama {
     public static void main(String[] args) {
         double tax, taxPrice, price, total;
         Scanner input = new Scanner(System.in);
@@ -21,5 +21,6 @@ public class kdvHesaplama {
         System.out.println("KDV Oranı: " + tax);
         System.out.println("KDV Tutarı: " + taxPrice);
         System.out.println("Toplam Tutar: " + total);
+        //
     }
 }
