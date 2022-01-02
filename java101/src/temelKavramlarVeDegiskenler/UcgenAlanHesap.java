@@ -1,7 +1,7 @@
 package temelKavramlarVeDegiskenler;
 import java.util.Scanner;
 
-public class ucgenAlanHesap {
+public class UcgenAlanHesap {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         int a, b, c;
