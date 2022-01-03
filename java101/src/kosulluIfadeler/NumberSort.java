@@ -5,6 +5,7 @@ public class NumberSort {
     public static void main(String[] args) {
         int a, b, c;
         String select;
+        boolean equalityChk = true;
         Scanner input = new Scanner(System.in);
 
         System.out.print("Please enter First Number : ");
@@ -13,12 +14,13 @@ public class NumberSort {
         b = input.nextInt();
         System.out.print("Please enter Third Number : ");
         c = input.nextInt();
+        if ((a == b) && (a == c)) equalityChk = false;
 
         System.out.println("For Largest to Smallest type(>) ;\nFor Smallest to Largest type (<)");
         System.out.print("Your Selection : ");
         select = input.next();
 
-        if (select.equals(">")){
+        if (select.equals(">") && equalityChk){
             if (a == c){
                 if (a > b)
                     System.out.println(a + " = " + c + " > " + b);
@@ -50,7 +52,7 @@ public class NumberSort {
                 else System.out.println(c + " > " + b + " > " + a);
             }
         }
-        else if (select.equals("<")){
+        else if (select.equals("<") && equalityChk){
             if (a == c) {
                 if (a < b)
                     System.out.println(a + " = " + c + " < " + b);
@@ -81,6 +83,8 @@ public class NumberSort {
                     System.out.println(c + " < " + a + " < " + b);
                 else System.out.println(c + " < " + b + " < " + a);
             }
-        }else System.out.println("Invalid Selection..!");
+        }
+        else if (!equalityChk) System.out.println(a + " = " + b + " = " +c);
+        else System.out.println("Invalid Selection..!");
     }
 }
