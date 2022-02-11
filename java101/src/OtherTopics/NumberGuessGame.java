@@ -12,7 +12,6 @@ public class NumberGuessGame {
         int guessed;
         int[] wrongNumbers = new int[5];
         boolean isWin = false;
-        System.out.println(number);
 
         while (right < 5) {
             System.out.println("Tahmin ettiğiniz sayıyı giriniz : ");
@@ -41,6 +40,7 @@ public class NumberGuessGame {
         if (!isWin){
             System.out.println("Kaybettin !!!");
             System.out.println("Başarısız tahminleriniz : " + Arrays.toString(wrongNumbers));
+            System.out.println("Gizli Sayı : " + number +" idi.. =( ");
         }
 
     }
